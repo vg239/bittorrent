@@ -53,3 +53,22 @@ The main.go file includes functions for :
 - Receiving pieces
 - Validating the received data
 
+
+```json
+"info": {
+    "name": "example.txt",
+    "length": 1048576,        # Total file size: 1 MB
+    "piece length": 262144,  # Each piece is 256 KB
+    "pieces": "<SHA-1 hash of piece 1> + <SHA-1 hash of piece 2> + ..."
+}
+```
+The info hash uniquely identifies the entire torrent, including:
+- The list of files.
+- Their sizes.
+- The piece length.
+- The pieces field.
+
+## Piece Distribution
+Peers advertise which pieces they have using bitfields:
+A bitfield is a compact representation of the pieces a peer has.
+Example: 11001 means the peer has pieces 0, 1, and 4 but is missing pieces 2 and 3.
