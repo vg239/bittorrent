@@ -72,3 +72,6 @@ The info hash uniquely identifies the entire torrent, including:
 Peers advertise which pieces they have using bitfields:
 A bitfield is a compact representation of the pieces a peer has.
 Example: 11001 means the peer has pieces 0, 1, and 4 but is missing pieces 2 and 3.
+
+
+some visual changes here
