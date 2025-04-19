@@ -74,4 +74,4 @@ A bitfield is a compact representation of the pieces a peer has.
 Example: 11001 means the peer has pieces 0, 1, and 4 but is missing pieces 2 and 3.
 
 
-some visual changes here
+![BitTorrent Flowchart Diagram](./Editor%20_%20Mermaid%20Chart-2025-04-19-093815.svg)
